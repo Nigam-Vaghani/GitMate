@@ -1,0 +1,10 @@
+README.md
+setup.py
+gitmate/__init__.py
+gitmate/cli.py
+gitmate.egg-info/PKG-INFO
+gitmate.egg-info/SOURCES.txt
+gitmate.egg-info/dependency_links.txt
+gitmate.egg-info/entry_points.txt
+gitmate.egg-info/requires.txt
+gitmate.egg-info/top_level.txt

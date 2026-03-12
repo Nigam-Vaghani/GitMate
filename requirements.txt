@@ -9,6 +9,7 @@ pfzy==0.3.4
 prompt_toolkit==3.0.52
 Pygments==2.19.2
 rich==14.3.3
+setuptools==82.0.1
 shellingham==1.5.4
 smmap==5.0.3
 typer==0.24.1

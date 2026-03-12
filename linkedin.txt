@@ -1,0 +1,52 @@
+Git is one of the most powerful tools developers use daily — but also one of the most frustrating when things go wrong.
+
+I’ve lost count of how many times I had to search:
+
+“How to push a new branch?”
+“Why is Git refusing to pull?”
+“Who changed this line of code?”
+
+Even experienced developers sometimes pause and double-check commands to avoid breaking the repository.
+
+That made me think:
+
+What if Git could guide you instead of expecting you to remember everything?
+
+So I started building GitMate — an interactive CLI assistant for Git.
+
+Instead of typing commands, GitMate provides a guided interface directly in the terminal:
+
+▶ Connect project to GitHub
+  Push changes
+  Pull latest changes
+  Create branch
+  Merge branch
+  Manage .gitignore
+  Check file history
+
+It helps with things like:
+
+• Safe pull with uncommitted change detection
+• Interactive branch management
+• .gitignore generation
+• Commit history exploration
+• Finding who last modified a specific line
+• Explaining confusing Git errors
+
+The goal is simple:
+
+Reduce Git mistakes and make Git workflows easier — especially for developers who are still learning.
+
+I'm still improving it and adding more features, but the core system is already working.
+
+Building this project taught me a lot about:
+
+CLI tool architecture
+
+Git internals
+
+improving developer experience
+
+If you've ever struggled with Git commands, I'd love to hear what features would make your workflow easier.
+
+🚀 Still building. More improvements coming.
