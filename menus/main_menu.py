@@ -3,6 +3,7 @@ from rich import print
 from workflows.connect_repo import connect_repository
 from workflows.manage_gitignore import run_gitignore_manager
 from workflows.push_changes import push_changes
+from history.blame import check_file_history
 
 def show_main_menu():
     """
@@ -34,6 +35,8 @@ def show_main_menu():
             run_gitignore_manager()
         elif actions == "Push changes":
             push_changes()
+        elif actions == "Check file history":
+            check_file_history()
         else:
             print("[yellow]Feature not implemented yet[/yellow]")
         

@@ -2,6 +2,7 @@ import subprocess
 from rich import print
 from git_engine.git_checker import ensure_git_initialized
 from utils.gitignore_manager import manage_gitignore
+from git_engine.error_handler import interpret_git_error
 
 
 def push_changes():
@@ -52,6 +53,14 @@ def push_changes():
     subprocess.run(["git", "commit", "-m", commit_message])
 
     print("[yellow]Pushing to remote...[/yellow]")
-    subprocess.run(["git", "push", "origin", "main"])
+    result = subprocess.run(
+        ["git", "push", "origin", "main"],
+        capture_output=True,
+        text=True
+    )
+
+    if result.returncode != 0:
+        interpret_git_error(result.stderr)
+        return
 
     print("[green]Push completed successfully[/green]")
