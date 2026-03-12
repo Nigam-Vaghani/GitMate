@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "hey=gitmate.cli:main"
+            "gitmate=gitmate.cli:main"
         ]
     }
 )
