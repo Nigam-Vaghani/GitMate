@@ -5,7 +5,8 @@ from workflows.manage_gitignore import run_gitignore_manager
 from workflows.push_changes import push_changes
 from history.blame import check_file_history
 from workflows.branch import create_branch, merge_branch, switch_branch
-
+from workflows.pull_chnages import pull_changes
+from workflows.status_dashboard import show_status_dashboard
 
 def show_main_menu():
     """
@@ -16,13 +17,14 @@ def show_main_menu():
             message="- GitMate - ",
             choices=[
                 "Connect project to GitHub",
+                "Repo status",
                 "Push changes",
                 "Pull latest changes",
                 "Create branch",
                 "Merge branch",
+                "Switch branch",
                 "Check file history",
                 "Manage .gitignore",
-                "Switch branch",
                 "Exit"
                 
             ],
@@ -47,6 +49,10 @@ def show_main_menu():
             merge_branch()
         elif actions == "Switch branch":
             switch_branch()
+        elif actions == "Pull latest changes":
+            pull_changes()
+        elif actions == "Repo status":
+            show_status_dashboard()
         else:
             print("[yellow]Feature not implemented yet[/yellow]")
         
