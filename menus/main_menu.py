@@ -7,6 +7,7 @@ from history.blame import check_file_history
 from workflows.branch import create_branch, merge_branch, switch_branch
 from workflows.pull_chnages import pull_changes
 from workflows.status_dashboard import show_status_dashboard
+from workflows.commit_history import show_commit_history
 
 def show_main_menu():
     """
@@ -25,6 +26,7 @@ def show_main_menu():
                 "Switch branch",
                 "Check file history",
                 "Manage .gitignore",
+                "Commit history",
                 "Exit"
                 
             ],
@@ -53,6 +55,8 @@ def show_main_menu():
             pull_changes()
         elif actions == "Repo status":
             show_status_dashboard()
+        elif actions == "Commit history":
+            show_commit_history()
         else:
             print("[yellow]Feature not implemented yet[/yellow]")
         
