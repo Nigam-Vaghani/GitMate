@@ -1,7 +1,7 @@
 import subprocess
 from rich import print
 from git_engine.git_checker import ensure_git_initialized
-
+from git_engine.branch_manager import choose_branch
 
 def create_branch():
     """
@@ -37,7 +37,7 @@ def create_branch():
     
 def merge_branch():
     """
-    Merge another branch into current branch
+    Merge selected branch into current branch
     """
 
     ready = ensure_git_initialized()
@@ -45,10 +45,9 @@ def merge_branch():
     if not ready:
         return
 
-    branch_name = input("Enter branch name to merge: ").strip()
+    branch_name = choose_branch("Select branch to merge")
 
     if not branch_name:
-        print("[red]Branch name cannot be empty[/red]")
         return
 
     print(f"[yellow]Merging branch '{branch_name}'...[/yellow]")
@@ -65,3 +64,35 @@ def merge_branch():
         return
 
     print("[green]Merge completed successfully[/green]")
+
+
+
+def switch_branch():
+    """
+    Switch to another branch
+    """
+
+    ready = ensure_git_initialized()
+
+    if not ready:
+        return
+
+    branch_name = choose_branch("Select branch to switch")
+
+    if not branch_name:
+        return
+
+    print(f"[yellow]Switching to '{branch_name}'...[/yellow]")
+
+    result = subprocess.run(
+        ["git", "checkout", branch_name],
+        capture_output=True,
+        text=True
+    )
+
+    if result.returncode != 0:
+        print("[red]Failed to switch branch[/red]")
+        print(result.stderr)
+        return
+
+    print(f"[green]Switched to '{branch_name}'[/green]")

@@ -4,7 +4,8 @@ from workflows.connect_repo import connect_repository
 from workflows.manage_gitignore import run_gitignore_manager
 from workflows.push_changes import push_changes
 from history.blame import check_file_history
-from workflows.branch import create_branch, merge_branch
+from workflows.branch import create_branch, merge_branch, switch_branch
+
 
 def show_main_menu():
     """
@@ -21,6 +22,7 @@ def show_main_menu():
                 "Merge branch",
                 "Check file history",
                 "Manage .gitignore",
+                "Switch branch",
                 "Exit"
                 
             ],
@@ -43,6 +45,8 @@ def show_main_menu():
             create_branch()
         elif actions == "merge branch":
             merge_branch()
+        elif actions == "Switch branch":
+            switch_branch()
         else:
             print("[yellow]Feature not implemented yet[/yellow]")
         
