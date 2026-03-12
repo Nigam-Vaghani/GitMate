@@ -52,9 +52,12 @@ def push_changes():
     print("[yellow]Creating commit...[/yellow]")
     subprocess.run(["git", "commit", "-m", commit_message])
 
-    print("[yellow]Pushing to remote...[/yellow]")
+    branch = get_current_branch()
+
+    print(f"[yellow]Pushing to branch '{branch}'...[/yellow]")
+
     result = subprocess.run(
-        ["git", "push", "origin", "main"],
+        ["git", "push", "-u", "origin", branch],
         capture_output=True,
         text=True
     )
@@ -64,3 +67,11 @@ def push_changes():
         return
 
     print("[green]Push completed successfully[/green]")
+    
+def get_current_branch():
+    result = subprocess.run(
+        ["git", "branch", "--show-current"],
+        capture_output=True,
+        text=True
+    )
+    return result.stdout.strip()
