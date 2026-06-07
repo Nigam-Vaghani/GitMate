@@ -181,4 +181,3 @@ If you want to improve GitMate:
 
 Nigam Vaghani
 
-Built to reduce Git friction in everyday development and make common workflows safer and faster.
