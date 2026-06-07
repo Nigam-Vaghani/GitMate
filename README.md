@@ -1,21 +1,27 @@
-# GitMate
+<h1 align="center">GitMate</h1>
 
-GitMate is a menu-driven Git assistant for developers who work in the terminal and want fewer Git mistakes during daily work.
+<p align="center">
+	Menu-driven Git workflows for developers who want fewer mistakes and faster daily delivery.
+</p>
 
-It wraps common Git operations in guided workflows so you can move faster without memorizing every command or flag.
+<p align="center">
+	GitMate wraps common Git operations in guided terminal flows so you can stay focused on coding instead of command recall.
+</p>
 
-## Tools and Technologies
+<h2 align="center">Tools and Technologies</h2>
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-CLI-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Rich](https://img.shields.io/badge/Rich-Terminal%20UI-FAFAFA?style=for-the-badge&logo=python&logoColor=3776AB)
-![InquirerPy](https://img.shields.io/badge/InquirerPy-Interactive%20Prompts-2E8B57?style=for-the-badge&logo=readthedocs&logoColor=white)
-![GitPython](https://img.shields.io/badge/GitPython-3.1.46-4B8BBE?style=for-the-badge&logo=python&logoColor=white)
-![Typer](https://img.shields.io/badge/Typer-CLI%20Framework-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Click](https://img.shields.io/badge/Click-CLI%20Utilities-1F6FEB?style=for-the-badge&logo=python&logoColor=white)
-![Prompt Toolkit](https://img.shields.io/badge/Prompt__Toolkit-Terminal%20Input-6A5ACD?style=for-the-badge&logo=gnometerminal&logoColor=white)
-![Pygments](https://img.shields.io/badge/Pygments-Syntax%20Highlighting-FFB000?style=for-the-badge&logo=python&logoColor=white)
-![Setuptools](https://img.shields.io/badge/Setuptools-Packaging-2C3E50?style=for-the-badge&logo=pypi&logoColor=white)
+<p align="center">
+	<img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+	<img src="https://img.shields.io/badge/Git-CLI-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+	<img src="https://img.shields.io/badge/Rich-Terminal%20UI-FAFAFA?style=for-the-badge&logo=python&logoColor=3776AB" alt="Rich" />
+	<img src="https://img.shields.io/badge/InquirerPy-Interactive%20Prompts-2E8B57?style=for-the-badge&logo=readthedocs&logoColor=white" alt="InquirerPy" />
+	<img src="https://img.shields.io/badge/GitPython-3.1.46-4B8BBE?style=for-the-badge&logo=python&logoColor=white" alt="GitPython" />
+	<img src="https://img.shields.io/badge/Typer-CLI%20Framework-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="Typer" />
+	<img src="https://img.shields.io/badge/Click-CLI%20Utilities-1F6FEB?style=for-the-badge&logo=python&logoColor=white" alt="Click" />
+	<img src="https://img.shields.io/badge/Prompt__Toolkit-Terminal%20Input-6A5ACD?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="Prompt Toolkit" />
+	<img src="https://img.shields.io/badge/Pygments-Syntax%20Highlighting-FFB000?style=for-the-badge&logo=python&logoColor=white" alt="Pygments" />
+	<img src="https://img.shields.io/badge/Setuptools-Packaging-2C3E50?style=for-the-badge&logo=pypi&logoColor=white" alt="Setuptools" />
+</p>
 
 ## The Problem GitMate Solves
 
